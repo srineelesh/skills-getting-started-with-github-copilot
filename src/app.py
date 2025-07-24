@@ -21,6 +21,21 @@ app.mount("/static", StaticFiles(directory=os.path.join(Path(__file__).parent,
 
 # In-memory activity database
 activities = {
+},
+    # Music activities
+    "Music Band": {
+        "description": "Join the school band and perform at events",
+        "schedule": "Mondays and Thursdays, 4:00 PM - 5:30 PM",
+        "max_participants": 10,
+        "participants": ["amelia@mergington.edu", "ethan@mergington.edu"]
+    },
+    # Science activities
+    "Robotics Club": {
+        "description": "Build and program robots for competitions",
+        "schedule": "Wednesdays, 3:30 PM - 5:00 PM",
+        "max_participants": 12,
+        "participants": ["harper@mergington.edu", "jackson@mergington.edu"]
+    }
     "Chess Club": {
         "description": "Learn strategies and compete in chess tournaments",
         "schedule": "Fridays, 3:30 PM - 5:00 PM",
@@ -59,24 +74,21 @@ activities = {
         "max_participants": 16,
         "participants": ["noah@mergington.edu", "isabella@mergington.edu"]
     },
-    "Drama Society": {
-        "description": "Participate in theater productions and acting workshops",
-        "schedule": "Mondays, 4:00 PM - 5:30 PM",
-        "max_participants": 20,
-        "participants": ["amelia@mergington.edu", "benjamin@mergington.edu"]
     },
-    # Intellectual activities
-    "Math Olympiad": {
-        "description": "Prepare for math competitions and solve challenging problems",
-        "schedule": "Fridays, 2:00 PM - 3:30 PM",
-        "max_participants": 10,
-        "participants": ["charlotte@mergington.edu", "elijah@mergington.edu"]
-    },
-    "Debate Club": {
-        "description": "Develop public speaking and argumentation skills",
-        "schedule": "Wednesdays, 3:30 PM - 5:00 PM",
-        "max_participants": 14,
-        "participants": ["jack@mergington.edu", "harper@mergington.edu"]
+        # Additional activities
+        "Drama Club": {
+            "description": "Participate in plays and improve acting skills",
+            "schedule": "Tuesdays and Fridays, 4:00 PM - 5:30 PM",
+            "max_participants": 20,
+            "participants": ["charlotte@mergington.edu", "henry@mergington.edu"]
+        },
+        "Photography Club": {
+            "description": "Learn photography techniques and work on creative projects",
+            "schedule": "Wednesdays, 3:00 PM - 4:30 PM",
+            "max_participants": 15,
+            "participants": ["ella@mergington.edu", "james@mergington.edu"]
+        }
+    }
     }
 }
 
